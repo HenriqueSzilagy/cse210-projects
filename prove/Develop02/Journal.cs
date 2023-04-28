@@ -7,20 +7,26 @@ class Journal
     {
         Entries = new List<Entry>();
         PromptGenerator = promptGenerator;
+        int counter = 0;
     }
 
    public void DisplayJournalEntries() 
+   
 {
+    int count = 0;
     if (Entries.Count == 0) 
     {
         Console.WriteLine("No entries found.");
     }
-    else // Caso contrário
+    else
     {
-        foreach (Entry entry in Entries) 
+        
+        foreach (Entry entry in Entries)
         {
-            entry.DisplayEntry();
+            Console.WriteLine($"Entry #{++count}:"); 
+            entry.DisplayEntry(); 
         }
+        Console.WriteLine($"Total entries: {Entries.Count}\n"); 
     }
 }
 
