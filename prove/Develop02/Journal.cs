@@ -7,7 +7,7 @@ class Journal
     {
         Entries = new List<Entry>();
         PromptGenerator = promptGenerator;
-        int counter = 0;
+        
     }
 
    public void DisplayJournalEntries() 
