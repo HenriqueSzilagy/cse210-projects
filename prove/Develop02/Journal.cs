@@ -9,15 +9,15 @@ class Journal
         PromptGenerator = promptGenerator;
     }
 
-   public void DisplayJournalEntries() // Método para exibir as entradas do diário
+   public void DisplayJournalEntries() 
 {
-    if (Entries.Count == 0) // Se não houver nenhuma entrada
+    if (Entries.Count == 0) 
     {
         Console.WriteLine("No entries found.");
     }
     else // Caso contrário
     {
-        foreach (Entry entry in Entries) // Exibe cada entrada na lista
+        foreach (Entry entry in Entries) 
         {
             entry.DisplayEntry();
         }
@@ -68,7 +68,7 @@ class Journal
                 string filename = Console.ReadLine();
                 System.IO.StreamReader file = new System.IO.StreamReader(filename);
                 string line;
-                Entries.Clear(); // clear existing entries
+                Entries.Clear(); 
                 while ((line = file.ReadLine()) != null)
                 {
                     string[] values = line.Split('|');
