@@ -1,0 +1,3 @@
+SimpleGoal:pray today,pray one time today,5,false
+EternalGoal:read scripture,ready scripture everyday,20
+ChecklistGoal:exercise my self control,exercise my self control for one week,10,100,7,0

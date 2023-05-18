@@ -204,10 +204,7 @@ public void LoadGoals()
         goals.Add(goal);
     }
 }
-    public void DisplayGoalOption()
-    {
 
-    }
     public void DisplayRecordOption()
 {   
     ListGoals();
